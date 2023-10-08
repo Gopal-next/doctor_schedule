@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request, abort, render_template
 
 app = Flask(__name__)
 
+
 doctors = [
     {"id": 1, "name": "Dr. Manu", "location": "Government Hospital", "availability": "Evenings", "max_patients": 5, "schedule": {"Monday": "Available", "Tuesday": "Available", "Wednesday": "Not Available", "Thursday": "Available", "Friday": "Not Available", "Saturday": "Available", "Sunday": "Not Available"}},
     {"id": 2, "name": "Dr. Anand", "location": "City Hospital", "availability": "Evenings", "max_patients": 15, "schedule": {"Monday": "Available", "Tuesday": "Available", "Wednesday": "Available", "Thursday": "Available", "Friday": "Available", "Saturday": "Available", "Sunday": "Not Available"}},
