@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        strong {
+            font-weight: bold;
+        }
+        ul {
+            list-style: none; 
+            padding: 0;        
+        }
+        li {
+            display: inline;  
+            margin-right: 10px;  
+        }
+    </style>
+    <script type="text/javascript">
+        
+        var doctors = doctorsData;
+
+        console.log(doctors);
+    </script>
+</head>
+<body>
+    <h2>Doctor Information</h2>
+    <p>Name: {{ doctor.name }}</p>
+    <p>Location: {{ doctor.location }}</p>
+    <p>Availability: {{ doctor.availability }}</p>
+    <p>Max Patients: {{ doctor.max_patients }}</p>
+    <p>Schedule: {{ doctor.schedule }}</p>
+    <p>Appointments Booked: {{ doctor.appointments_booked }}</p>
+
+    <ul>
+        <li><a href="/doctors">Go Back</a></li>
+        <li><a href="/">Go to Homepage</a></li>
+    </ul>
+</body>
+</html>

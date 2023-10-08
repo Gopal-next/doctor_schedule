@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors List</title>
+</head>
+
+<body>
+    <h1>Doctors List</h1>
+    <ul>
+        {% for doctor in doctors %}
+        <li><a href="{{ url_for('get_doctor', doctor_id=doctor['id']) }}">Dr. {{ doctor['name'] }} - Id:
+                {{ doctor['id'] }} - Location: {{ doctor['location'] }} - Availability: {{ doctor['availability'] }} -
+                Max Patients: {{ doctor['max_patients'] }}</a></li>
+        {% endfor %}
+    </ul>
+    <li><a href="/">Go to Homepage</a></li>
+</body>
+
+</html>
