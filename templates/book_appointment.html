@@ -31,24 +31,7 @@
     <p>{{ result_message }}</p>
     <p>{{ result_messages }}</p>
 
-    <script>
-        function bookAppointment() {
-            var form = document.getElementById('appointmentForm');
-            var formData = new FormData(form);
-            fetch('/appointments/book', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(Object.fromEntries(formData.entries())),
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert(`${data.message}\nDoctor: ${data.doctor_name}\nLocation: ${data.location}\nBooked Day: ${data.booked_day}`);
-            })
-            .catch(error => console.error('Error:', error));
-        }
-    </script>
+    
     <li><a href="/">Go to Homepage</a></li>
 </body>
 </html>

@@ -51,5 +51,3 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 3. Make your changes.
 4. Submit a pull request.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
