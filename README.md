@@ -9,9 +9,6 @@ Welcome to the Flask Doctor Appointment App! This simple web application allows 
 - [How to Run](#how-to-run)
 - [HTML Templates](#html-templates)
 - [CSS Styling](#css-styling)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 This Flask application is designed to showcase a basic doctor appointment system. Users can navigate through a list of doctors, view their schedules, and book appointments based on availability.
@@ -41,13 +38,6 @@ To run the Flask application locally, follow these steps:
 ## CSS Styling
 The `static/style.css` file contains simple styling to enhance the visual appeal of the application.
 
-## Usage
-Feel free to explore the code, modify it, and experiment with new features. If you encounter any issues or have suggestions for improvement, please open an issue.
 
-## Contributing
-Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes.
-4. Submit a pull request.
+
 
